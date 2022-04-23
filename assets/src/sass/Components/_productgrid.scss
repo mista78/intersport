@@ -150,6 +150,12 @@
                 padding: 15px 32px;
                 border-radius: 26px;
                 display: inline-block;
+
+                @include media-break-up(768) { 
+                    color: #164194;
+                    background: #fff;
+                    border: 1px solid #164194;
+                }
             }
         }
     }
