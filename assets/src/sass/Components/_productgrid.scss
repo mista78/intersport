@@ -94,16 +94,20 @@
                     top: 15px;
                     right: 17px;
                     width: fit-content;
-                    padding: 3px 5px;
+                    padding: 1.5px 2.5px;
                     background: #164194;
                     font-weight: 700;
-                    font-size: 12px;
+                    font-size: 8.7px;
                     line-height: 16px;
                     display: flex;
                     align-items: center;
                     text-align: center;
                     text-transform: uppercase;
                     color: #fff;
+                    @include media-break-up(768) { 
+                        padding: 3px 5px;
+                        font-size: 12px;
+                    }
                 }
 
                 &__image {
