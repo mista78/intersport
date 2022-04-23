@@ -12,11 +12,11 @@ calls("herobanner", block => {
 
             let now = new Date(),
                 distance = countDown - now;
-
-            document.getElementById('days').innerText = Math.floor(distance / (day));
-            document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
-            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
-            document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+            const [days,hours,minutes,seconds] = selector("#days, #hours, #minutes, #seconds");
+            days.innerText = Math.floor(distance / (day));
+            hours.innerText = Math.floor((distance % (day)) / (hour));
+            minutes.innerText = Math.floor((distance % (hour)) / (minute));
+            seconds.innerText = Math.floor((distance % (minute)) / second);
 
             if (distance < 1) {
                 clearInterval(x);
