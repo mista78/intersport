@@ -1,12 +1,14 @@
 @include component("Herobanner") {
     display: grid;
     grid-template-columns: 5fr 7fr;
-    // background: linear-gradient(92.08deg, #136ad0 34.32%, #1bb77f 105.23%);
     @include media-break-down(768) {
         &.container {
             padding-left: 0;
             padding-right: 0;
         }
+    }
+    @include media-break-up(768) {
+        background: linear-gradient(92.08deg, #136ad0 34.32%, #1bb77f 105.23%);
     }
     @extend %linear;
     & > * {

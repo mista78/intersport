@@ -2,7 +2,7 @@
     &__item {
         padding-top: 10px;
         margin-bottom: 50px;
-        width: fit-content;
+        // width: fit-content;
         margin: 0 auto;
         margin-bottom: 10px;
         @include media-break-up(768) {
@@ -14,7 +14,7 @@
         &__image {
             @include media-break-up(768) {
                 picture {
-                    transform: translateY(-25%);
+                    transform: translate(35%,-25%);
                     display: block;
                 }
             }
