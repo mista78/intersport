@@ -12,7 +12,9 @@
             margin-bottom: 0;
         }
         &__image {
+            text-align: center;
             @include media-break-up(768) {
+                text-align: unset;
                 picture {
                     transform: translate(35%,-25%);
                     display: block;
