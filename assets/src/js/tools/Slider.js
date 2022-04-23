@@ -273,7 +273,7 @@ class Slider {
             }
         }].map(item => this.element.appendChild(this.build(item)));
         this.onMove(index => {
-            // if (this.config.infini === true) return;
+            if (this.config.infini === true) return;
             const [next, prev] = this.selector(".carousel__next,.carousel__prev", this.element);
             if (index === 0) {
                 prev.classList.add("carousel__prev--disabled");
