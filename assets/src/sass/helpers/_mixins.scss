@@ -1,0 +1,28 @@
+@mixin media-break-up($value) {
+	@media screen and (min-width: ($value) + px) {
+		@content;
+	}
+}
+
+@mixin media-break-down($value) {
+	@media screen and (max-width: ($value) + px) {
+		@content;
+	}
+}
+@mixin component($value) {
+	.#{$value} {
+		@content;
+	}
+}
+
+@function step($step) {
+	@return $step * 8px;
+}
+
+@function size($size) {
+	@return ($step * $size / 16) + rem;
+}
+
+%linear {
+	background: linear-gradient(92.08deg, #136ad0 13.32%, #1bb77f 60.23%);
+}

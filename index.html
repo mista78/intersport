@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/dist/css/app.min.css">
+    <script src="assets/dist/js/scripts.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="Herobanner container">
+            <div class="Herobanner__timer">
+                <p class="Herobanner__timer--title">Jusqu’au 27 septembre</p>
+                <div class="Herobanner__timer--time">
+                    <div>
+                        <span class="Herobanner__timer--time--hours">
+                            <span id="days">-1</span>
+                            <span class="separator"></span>
+                        </span>
+                        <span class="Herobanner__timer--time--text">Jours</span>
+                    </div>
+                    <div>
+                        <span class="Herobanner__timer--time--hours">
+                            <span id="hours">-13</span>
+                            <span class="separator"></span>
+                        </span>
+                        <span class="Herobanner__timer--time--text">Heures</span>
+                    </div>
+                    <div>
+                        <span class="Herobanner__timer--time--hours">
+                            <span id="minutes">-12</span>
+                            <span class="separator"></span>
+                        </span>
+                        <span class="Herobanner__timer--time--text">Minutes</span>
+                    </div>
+                    <div>
+                        <span class="Herobanner__timer--time--hours">
+                            <span id="seconds">-38</span>
+                            <span class="separator"></span>
+                        </span>
+                        <span class="Herobanner__timer--time--text">Secondes</span>
+                    </div>
+                </div>
+                <div class="Herobanner__timer--text">
+                    <em>SÉLECTION</em> <em class="desktop">JEUX</em> PLEIN AIR
+                </div>
+                <div class="Herobanner__timer--logo">
+                    <img src="assets/image/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="Herobanner__background">
+                <picture>
+                    <source srcset="assets/image/Bannerlg.jpg" media="(min-width: 768px)">
+                    <img src="assets/image/Banner.png" alt="">
+                </picture>
+            </div>
+        </section>
+        <section class="Producthero container">
+            <div id="Producthero__carousel" mobilevisible="1" visible="1" overflow="1">
+                <div class="Producthero__item">
+                    <div class="Producthero__item__image">
+                        <picture>
+                            <source srcset="assets/image/productlg.png" media="(min-width: 768px)">
+                            <img src="assets/image/product.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="Producthero__item__details">
+                        <span class="Producthero__item__details--type">Homme</span>
+                        <h2 class="Producthero__item__details--titre">
+                            THE NORTH FACE
+                        </h2>
+                        <p class="Producthero__item__details--desc">
+                            Sweatshirt à capuche
+                        </p>
+                        <div class="Producthero__item__details--price">
+                            <span class="promot">
+                                79,99€
+                            </span>
+                            <span class="new">
+                                47,99€
+                            </span>
+                        </div>
+                        <a href="#" class="Producthero__item__details--cta">
+                            Acheter
+                        </a>
+                    </div>
+                </div>
+                <div class="Producthero__item">
+                    <div class="Producthero__item__image">
+                        <picture>
+                            <source srcset="assets/image/productlg.png" media="(min-width: 768px)">
+                            <img src="assets/image/product.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="Producthero__item__details">
+                        <span class="Producthero__item__details--type">Homme</span>
+                        <h2 class="Producthero__item__details--titre">
+                            THE NORTH FACE
+                        </h2>
+                        <p class="Producthero__item__details--desc">
+                            Sweatshirt à capuche
+                        </p>
+                        <div class="Producthero__item__details--price">
+                            <span class="promot">
+                                79,99€
+                            </span>
+                            <span class="new">
+                                47,99€
+                            </span>
+                        </div>
+                        <a href="#" class="Producthero__item__details--cta">
+                            Acheter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Submenu container">
+            <div class="Submenu__container" id="Submenu">
+                <span class="active">Football &amp; sports collectifs</span>
+                <span>Jeux &amp; loisirs</span>
+                <span>Vélos &amp; Glisse urbaine</span>
+            </div>
+        </section>
+        <section class="Productgrid">
+
+            <div class="Productgrid__head container" data-head="FootBall &amp; Sports">
+                <div class="Productgrid__head--desc">
+                    <h2>
+                        FootBall &amp; Sports Collectifs </h2>
+                    <p>
+                        La randonnée, c’est aussi pour les enfants ! Mais pour ne pas avoir d’ampoules aux pieds après
+                        de longues heures de marche, mieux vaut être équipé de bonnes chaussures de randonnée enfant.
+                    </p>
+                </div>
+                <div class="Productgrid__head--image">
+                    <picture>
+                        <img src="assets/image/Rectangle3.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="Productgrid__content container">
+                <div class="Productgrid__content__items " id="Productgrid__carousel" visible="5">
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Productgrid__content__cta container">
+                    <a href="#" class="Productgrid__content__cta--btn">
+                        Toute la séléction
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="Productgrid">
+
+            <div class="Productgrid__head container" data-head="Jeux &amp; Loisirs">
+                <div class="Productgrid__head--desc">
+                    <h2>
+                        Jeux &amp; Loisirs </h2>
+                    <p>
+                        La randonnée, c’est aussi pour les enfants ! Mais pour ne pas avoir d’ampoules aux pieds après
+                        de longues heures de marche, mieux vaut être équipé de bonnes chaussures de randonnée enfant.
+                    </p>
+                </div>
+                <div class="Productgrid__head--image">
+                    <picture>
+                        <img src="assets/image/Rectangle3.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="Productgrid__content container">
+                <div class="Productgrid__content__items " id="Productgrid__carousel" visible="5">
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Productgrid__content__cta container">
+                    <a href="#" class="Productgrid__content__cta--btn">
+                        Toute la séléction
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="Productgrid">
+
+            <div class="Productgrid__head container" data-head="VÉLOS &amp; GLISSE URBAINE">
+                <div class="Productgrid__head--desc">
+                    <h2>
+                        VÉLOS &amp; GLISSE URBAINE </h2>
+                    <p>
+                        La randonnée, c’est aussi pour les enfants ! Mais pour ne pas avoir d’ampoules aux pieds après
+                        de longues heures de marche, mieux vaut être équipé de bonnes chaussures de randonnée enfant.
+                    </p>
+                </div>
+                <div class="Productgrid__head--image">
+                    <picture>
+                        <img src="assets/image/Rectangle3.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="Productgrid__content container">
+                <div class="Productgrid__content__items " id="Productgrid__carousel" visible="5">
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Productgrid__content__items--item">
+                        <div class="Productgrid__content__items--item__image">
+                            <picture>
+                                <source srcset="assets/image/Rectanglelg.jpg" media="(min-width: 768px)">
+                                <img src="assets/image/Rectangle.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="Productgrid__content__items--item__details">
+                            <h2 class="Productgrid__content__items--item__details--title">
+                                marque
+                            </h2>
+                            <p class="Productgrid__content__items--item__details--desc">
+                                Nom produit <br> Nom du produit ligne 2...
+                            </p>
+                            <div class="Productgrid__content__items--item__details--price">
+                                <span class="promot">
+                                    100,99€
+                                </span>
+                                <span class="new">
+                                    99,99€
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Productgrid__content__cta container">
+                    <a href="#" class="Productgrid__content__cta--btn">
+                        Toute la séléction
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

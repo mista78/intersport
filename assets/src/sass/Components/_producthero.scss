@@ -1,0 +1,92 @@
+@include component("Producthero") {
+    &__item {
+        padding-top: 10px;
+        margin-bottom: 50px;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        @include media-break-up(768) {
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            padding-top: 39px;
+            margin-bottom: 0;
+        }
+        &__image {
+            @include media-break-up(768) {
+                picture {
+                    transform: translateY(-25%);
+                    display: block;
+                }
+            }
+        }
+        &__details {
+            text-align: center;
+            @include media-break-up(768) {
+                text-align: left;
+            }
+            &--type,
+            &--titre,
+            &--price,
+            &--desc {
+                text-transform: uppercase;
+                display: block;
+                color: #393938;
+                margin-bottom: 9px;
+            }
+            &--type {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            &--titre {
+                font-size: 22px;
+                line-height: 22px;
+                letter-spacing: 0.155979px;
+                font-weight: 700;
+            }
+
+            &--price {
+                font-size: 18px;
+                text-transform: initial;
+                line-height: 25px;
+                margin-bottom: 9px;
+
+                span {
+                    display: inline-block;
+                    &:not(:last-child) {
+                        margin-right: 16px;
+                    }
+                    &.promot {
+                        text-decoration-line: line-through;
+                    }
+                    &.new {
+                        font-size: 28px;
+                        line-height: 38px;
+                        font-weight: 700;
+                        color: #ff601f;
+                    }
+                }
+            }
+            &--desc {
+                font-size: 18px;
+                text-transform: initial;
+                line-height: 22px;
+                margin-bottom: 7px;
+            }
+            &--cta {
+                text-decoration: none;
+                width: fit-content;
+                margin: 0 auto;
+                padding: 10px 20px;
+
+                border: 1px solid #393938;
+                display: block;
+                color: #393938;
+                font-weight: 600;
+                border-radius: 26px;
+                @include media-break-up(768) {
+                    margin: unset;
+                }
+            }
+        }
+    }
+} ;

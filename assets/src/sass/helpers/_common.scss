@@ -1,0 +1,65 @@
+.container,
+.nav,
+.main-content {
+    width: 100%;
+    padding-left: calc(50% - ((100vw - #{4} * #{$step + px}) / 2));
+    padding-right: calc(50% - ((100vw - #{4} * #{$step + px}) / 2));
+    @include media-break-up($container-width + $multiple * $step) {
+        padding-left: calc(50% - (#{$container-width + px} / 2));
+        padding-right: calc(50% - (#{$container-width + px} / 2));
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.carousel {
+    position: relative;
+    &__next,
+    &__prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 30;
+        width: 60px;
+        height: 60px;
+        box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.119455);
+        border-radius: 100%;
+        background: #fff;
+        &--disabled {
+            opacity: 0;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+        &::after {
+            position: absolute;
+            // width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__prev {
+        left: 15px;
+        &::after {
+            
+            content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxNCAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0wLjk5Mzg2MiAxMS4zOTk1TDExLjYwMDUgMjIuMDA2MUwxMy4wMTQ3IDIwLjU5MTlMMy44MjIyOSAxMS4zOTg4TDEzLjAxNDcgMi4yMDcxMUwxMS42MDA1IDAuNzkyODkyTDAuOTkzODYyIDExLjM5OTVaIiBmaWxsPSJibGFjayIvPg0KPC9zdmc+DQo=);
+        }
+    }
+    &__next {
+        right: 15px;
+        &::after {
+            content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxNCAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xMy4wMDYxIDExLjM5OTVMMi4zOTk1NCAyMi4wMDYxTDAuOTg1MzIzIDIwLjU5MTlMMTAuMTc3NyAxMS4zOTg4TDAuOTg1MzIzIDIuMjA3MTFMMi4zOTk1NCAwLjc5Mjg5MkwxMy4wMDYxIDExLjM5OTVaIiBmaWxsPSIjM0IzQjNDIi8+DQo8L3N2Zz4NCg==);
+        }
+    }
+}
+[id*="__carousel"] {
+    position: relative;
+    .carousel {
+        @include media-break-down(768) {
+            overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+@include component("Productgrid") {
+    $sizeHeadFont: 220px;
+    &__head {
+        padding-top: 33px;
+        padding-bottom: 96px;
+        background: linear-gradient(92.08deg, #136ad0 34.32%, #1bb77f 105.23%);
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        @include media-break-up(768) {
+            padding-top: 62px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            grid-column-gap: 86px;
+        }
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+            text-transform: uppercase;
+            font-family: "AmsiProNarw-Ultra";
+            margin-bottom: 9px;
+            @include media-break-up(768) {
+                font-family: "AmsiPro-Black";
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 24px;
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &::after {
+            content: attr(data-head);
+            position: absolute;
+            font-size: $sizeHeadFont;
+            line-height: 258px;
+            width: fit-content;
+            letter-spacing: -8px;
+            font-family: "AmsiProCond-BlackItalic";
+            bottom: -1 * $sizeHeadFont * 0.25;
+            left: 40px;
+            text-transform: uppercase;
+            opacity: 0.36;
+            white-space: nowrap;
+            @include media-break-up(768) {
+                $sizeHeadFont: 450px;
+                font-size: $sizeHeadFont;
+                line-height: 527px;
+                bottom: -1 * $sizeHeadFont * 0.25;
+                left: 50vw;
+            }
+        }
+        &--image {
+
+            display: none;
+
+            @include media-break-up(768) {
+                display: block;
+            }
+        }
+    }
+    &__content {
+
+       
+        @include media-break-up(768) {
+            transform: translateY(-10%);
+        }
+        &.container {
+            @include media-break-down(768) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        &__items {
+            .carousel__item {
+                &:first-child {
+                    border-left: 1px solid #d3d3d3;
+                }
+                &:not(:last-child) {
+                    border-right: 1px solid #d3d3d3;
+                }
+                border-bottom: 1px solid #d3d3d3;
+            }
+            &--item {
+                flex: 1;
+                padding-inline: 18px;
+                padding-top: 11px;
+                padding-bottom: 48px;
+                text-align: center;
+                background: #fff;
+
+                &__image {
+                    margin-bottom: 14px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                &__details {
+                    &--title {
+                        font-size: 16px;
+                        line-height: 21.79px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        margin-bottom: 3px;
+                        color: #3c3c3b;
+                    }
+                    &--desc {
+                        font-size: 13px;
+                        line-height: 110%;
+                        color: #3c3c3b;
+                        margin-bottom: 23px;
+                    }
+
+                    &--price {
+                        span {
+                            display: inline-block;
+                            &:not(:last-child) {
+                                margin-right: 8px;
+                            }
+                            &.promot {
+                                font-size: 12px;
+                                line-height: 16px;
+                                text-decoration-line: line-through;
+                            }
+                            &.new {
+                                font-size: 20px;
+                                line-height: 27px;
+                                font-weight: 700;
+                                color: #ff601f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__cta {
+            padding-block: 21px;
+            &--btn {
+                font-size: 14px;
+                line-height: 19px;
+                text-align: center;
+                font-weight: 600;
+                text-decoration: none;
+                color: #fff;
+                background: #164194;
+                padding: 15px 32px;
+                border-radius: 26px;
+                display: inline-block;
+            }
+        }
+    }
+} ;

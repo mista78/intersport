@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "babel": "^6.23.0",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "cssnano": "^5.1.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.12",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

@@ -1,0 +1,155 @@
+@include component("Herobanner") {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    // background: linear-gradient(92.08deg, #136ad0 34.32%, #1bb77f 105.23%);
+    @include media-break-down(768) {
+        &.container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    @extend %linear;
+    & > * {
+        flex: 1;
+        padding: 17px 19px 20px;
+    }
+    &__timer {
+        position: relative;
+        &--title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 8.21823px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.155979px;
+            text-transform: uppercase;
+            color: #ffffff;
+            @include media-break-up(768) {
+                font-size: 17px;
+                line-height: 23px;
+                letter-spacing: 0.322653px;
+            }
+        }
+        &--time {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(4, 33px);
+            grid-column-gap: 5px;
+            margin-bottom: 14px;
+            @include media-break-up(768) {
+                grid-template-columns: repeat(4, 64px);
+            }
+            &--hours {
+                font-family: "Open Sans";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 20px;
+                display: block;
+                line-height: 33px;
+                /* identical to box height, or 164% */
+                text-align: center;
+                color: #4b4b4b;
+                background: #fff;
+                border-radius: 8px;
+                margin-bottom: 2.3px;
+                position: relative;
+                .separator {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: #b4b4b4;
+                    border-radius: 8px;
+                    content: "";
+                    display: block;
+                    z-index: 10;
+                }
+                &::after, &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-35%);
+                    width: 2px;
+                    height: 4.78px;
+                    background: #000;
+                    display: block;
+                    z-index: 5;
+                }
+                &::before {
+                    left: 2px;
+                }
+                &::after {
+                    right: 2px;
+                }
+                @include media-break-up(768) {
+                    font-size: 40px;
+                    line-height: 68px;
+                }
+            }
+            &--text {
+                display: block;
+                text-align: center;
+                font-size: 5px;
+                line-height: 8px;
+                letter-spacing: 0.966851px;
+                text-transform: uppercase;
+                color: #f2f2f2;
+                @include media-break-up(768) {
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        &--text {
+            font-family: "AmsiProCond-Ultra";
+            font-size: 31.1795px;
+            line-height: 32px;
+            color: #fff;
+            letter-spacing: 3px;
+            em {
+                font-family: "AmsiProCond-SemiBoldItalic";
+                color: #ff601f;
+                letter-spacing: 1px;
+            }
+            em.desktop {
+                font-family: "AmsiProCond-Ultra";
+                color: #fff;
+                display: block;
+            }
+            @include media-break-up(768) {
+                em, em.desktop {
+                    font-family: "AmsiProCond-SemiBoldItalic";
+                    font-size: 62px;
+                    color: #ff601f;
+                    display: inline;
+                }
+                font-size: 92px;
+                line-height: 80px;
+            }
+        }
+        &--logo {
+            position: absolute;
+            width: 36px;
+            right: 0;
+            transform: translate(50%, -50%);
+            z-index: 5;
+            top: 50%;
+            @include media-break-up(768) {
+                width: 64px;
+            }
+        }
+    }
+    &__background {
+        position: relative;
+        padding: 0;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+} ;
