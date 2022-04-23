@@ -41,7 +41,7 @@ calls("Producthero", block => {
 
 calls("menu", block => {
     const [submenu] = selector(`#Submenu`);
-    const children = selector(`#Submenu span`, submenu);
+    const children = selector(`#Submenu a`, submenu);
     const reducer = (prev, current) => prev + current;
     const size = children.map(item => Math.round(item.getBoundingClientRect().width + 26));
     const width = size.reduce(reducer);

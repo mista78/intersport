@@ -9,9 +9,13 @@
         padding-right: calc(50% - (#{$container-width + px} / 2));
     }
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 

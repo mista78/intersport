@@ -1,19 +1,23 @@
 @include component("Submenu") {
     background: #F6F5F3;
     overflow-x: auto;
+    position: sticky;
+    top: 0;
+    z-index: 30;
     &__container {
         margin: 0 auto;
         transition: .5s;
-        span  {
+        a  {
             display: inline-block;
             width: fit-content;
             padding: 32px 0px;
             line-height: 100%;
+            text-decoration: none;
+            color: #393938;
             &:not(:last-child){
                 margin-right: 16px;
             }
             &.active {
-                color: #393938;
                 border-bottom: 1px solid #3B3B3C; 
             }
         }
