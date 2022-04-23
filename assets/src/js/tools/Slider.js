@@ -275,16 +275,16 @@ class Slider {
         this.onMove(index => {
             // if (this.config.infini === true) return;
             const [next, prev] = this.selector(".carousel__next,.carousel__prev", this.element);
-            // if (index === 0) {
-            //     prev.classList.add("carousel__prev--disabled");
-            // } else {
-            //     prev.classList.remove("carousel__prev--disabled");
-            // }
-            // if (this.items[this.currentItem + this.slideVisible()] === undefined) {
-            //     next.classList.add("carousel__next--disabled");
-            // } else {
-            //     next.classList.remove("carousel__next--disabled");
-            // }
+            if (index === 0) {
+                prev.classList.add("carousel__prev--disabled");
+            } else {
+                prev.classList.remove("carousel__prev--disabled");
+            }
+            if (this.items[this.currentItem + this.slideVisible()] === undefined) {
+                next.classList.add("carousel__next--disabled");
+            } else {
+                next.classList.remove("carousel__next--disabled");
+            }
         })
     };
     translate(percent) {
