@@ -7,16 +7,23 @@ calls("herobanner", block => {
         hour = minute * 60,
         day = hour * 24;
     console.log(block);
-    let countDown = new Date('25 april 2022 00:00:00').getTime(),
+    let countDown = new Date('10 may 2022 00:00:00').getTime(),
         x = setInterval(function () {
 
+            
             let now = new Date(),
-                distance = countDown - now;
+            distance = countDown - now;
+            const time = {
+                days: Math.floor(distance / (day)),
+                hours: Math.floor((distance % (day)) / (hour)),
+                minutes: Math.floor((distance % (hour)) / (minute)),
+                seconds: Math.floor((distance % (minute)) / second)
+            }
             const [days,hours,minutes,seconds] = selector("#days, #hours, #minutes, #seconds");
-            days.innerText = Math.floor(distance / (day));
-            hours.innerText = Math.floor((distance % (day)) / (hour));
-            minutes.innerText = Math.floor((distance % (hour)) / (minute));
-            seconds.innerText = Math.floor((distance % (minute)) / second);
+            days.innerHTML = time.days < 10 ? '0' + time.days : time.days;
+            hours.innerHTML = time.hours < 10 ? '0' + time.hours : time.hours;
+            minutes.innerHTML = time.minutes < 10 ? '0' + time.minutes : time.minutes;
+            seconds.innerHTML = time.seconds < 10 ? '0' + time.seconds : time.seconds;  
 
             if (distance < 1) {
                 clearInterval(x);
